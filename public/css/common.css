@@ -1,0 +1,33 @@
+.question {
+  height: 100%;
+  float: left;
+  margin: 30px 80px;
+  align: middle;
+}
+
+.qImg {
+	width: 80%;
+}
+
+.aImg {
+  width: 80%;
+  border: 5px solid red;
+}
+
+.answerHide {
+	display: none;
+}
+
+.answerShow {
+	display: block;
+}
+
+.sourceToggle {
+	display: block;
+	margin: 10px 80px;
+}
+
+.stopwatch {
+  height: 100%;
+  text-align: center;
+}

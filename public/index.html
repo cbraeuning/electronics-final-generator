@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ECE3200 Final Generator</title>
+    
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/common.css">
+  <body>
+
+    <div class="row">
+      <div class="col-12 text-center">
+        <div class="jumbotron">
+          <h1 class="display-3">Electronics Final Exam Generator</h1>
+          <p class="lead">This site generates a practice final exam for ECE 3200.</p>
+          <hr class="my-4">
+          <p>If you found this tool useful, <a href="https://venmo.com/Collin-Braeuning" target="_blank">hmu on Venmo</a></p>
+          <p class="lead">
+            <button class="btn btn-primary" onclick="generateTest()" id="generateButton">Generate Final</button>
+          </p>
+          <div class="row">
+            <div class="col-6" style="text-align:right">
+              <p>Time elapsed:</p>
+            </div>
+            <div class="col-1">
+                <div class="stopwatch"></div>
+            </div>
+            <div class="col-5"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div id="testPlaceholder" style="width: 100%; height: 100%">
+      <button class="btn btn-secondary sourceToggle" onclick="toggleAnswers()" id="answerButton">Show Answers</button>
+    </div>
+
+
+    <script src="js/script.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.8.0/firebase.js"></script>
+    <script>
+    // Initialize Firebase
+    var config = {
+    apiKey: "AIzaSyAEkddyQ6i9MCscLg7A91laf0sQ9SGigOI",
+    authDomain: "electronics-final-generator.firebaseapp.com",
+    databaseURL: "https://electronics-final-generator.firebaseio.com",
+    projectId: "electronics-final-generator",
+    storageBucket: "electronics-final-generator.appspot.com",
+    messagingSenderId: "1076437909378"
+  };
+  firebase.initializeApp(config);
+</script>
+</body>
+</html>
